@@ -2,7 +2,7 @@ library(zeallot)
 library(tidyverse)
 library(forecast)
 
-# Respiratory Virus Dashboard dataset
+# "COVID-19 Hospital Data (ARCHIVED)" dataset
 url <- "https://data.chhs.ca.gov/dataset/2df3e19e-9ee4-42a6-a087-9761f82033f6/resource/47af979d-8685-4981-bced-96a6b79d3ed5/download/covid19hospitalbycounty.csv"
 
 data_ingestion <- function(url) {
