@@ -4,6 +4,6 @@ Forecasting  on unseen dates:
 
 <img width="574" height="356" alt="image" src="https://github.com/user-attachments/assets/cd3336d8-8951-4c64-8189-470bc728762d" />
 
-Backtest results:
+Backtest results (MAE):
 
 <img width="739" height="190" alt="image" src="https://github.com/user-attachments/assets/470357d8-cb21-43d5-9bc1-3d89bf5ffcd8" />
