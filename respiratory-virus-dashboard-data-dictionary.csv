@@ -1,0 +1,181 @@
+column,type,label,description
+SEASON,text,Season,"Respiratory virus season which starts on Morbidity Mortality Weekly Report (MMWR) week 26 and ends on week 27.  
+                                                                                                                                                                                                                               
+Values: Text (Season Years)"
+AGE_GRP,text,Age Group,"Includes age groups including <18 years (only for vaccine coverage and pediatric deaths),  <5 years,  5-17 years, 18-64 years for adults, and >64 years.  
+                                                                                                                                                                                                            
+Values: Text (Age groups)"
+RPHO_REGION,text,RPHO Region,"Regional Public Health Office Region. Includes Bay Area, Central California, Greater Sierra-Sacramento, Los Angeles, Rural North, and Southern Callifornia. Also, includes the full state under the ""California"" region.
+
+Values: Text (Region names)"
+WEEKENDING,text,Weekending Dates,"The date of the end of the CDC's Morbidity and Mortality Weekly Report (MMWR week). The start of the MMWR week is Sunday and the week ends on Saturday. 
+
+Values: Dates in MM/DD/YYYY"
+MMWR_WEEK,text,MMWR Week,"Week number according to the MMWR, starting with 1 for the first full week of the year.
+
+Values: Positive Numeric"
+MMWR_YEAR,text,MMWR Year,"Year corresponding to the MMWR week.
+
+Values: Positive Numeric"
+COV_VAX_COVERAGE,text,Vaccine Coverage for COVID-19,"Modelled Vaccine Coverage Estimates for COVID-19. Modelled value provided for California, but range provided for other regions.
+
+Values: Positive Numeric and categorical ranges"
+FLU_VAX_COVERAGE,text,Vaccine Coverage for Influenza,"Modelled Vaccine Coverage Estimates for Influenza. Modelled value provided for California, but range provided for other regions.
+
+Values: Positive Numeric and categorical ranges"
+COV_DOSE_COUNT,text,Weekly Vaccine Doses for COVID-19,"Number of  Vaccine Doses for COVID-19 by MMWR week.
+
+Values: Positive Numeric"
+FLU_DOSE_COUNT,text,Weekly Vaccine Doses for Influenza,"Number of  Vaccine Doses for Influenza by MMWR week.
+
+Values: Positive Numeric"
+COV_CUMULATIVE_DOSE_COUNT,text,Season Cumulative Vaccine Doses for COVID-19,"Cumulative Vaccine Doses for COVID-19, resetting to 0 when a new vaccine product is available.
+
+Values: Positive Numeric"
+FLU_CUMULATIVE_DOSE_COUNT,text,Season Cumulative Vaccine Doses for Influenza,"Cumulative Vaccine Doses for Influenza by standard season.
+
+Values: Positive Numeric"
+COV_POSITIVES,text,Positive COVID-19 Tests,"Number of laboratory COVID-19 positive test results for each MMWR week.
+
+Values: Positive Numeric"
+COV_TOTAL_TESTS,text,Total Number of COVID-19 Tests,"Total number of COVID-19 tests each MMWR week.
+
+Values: Positive Numeric"
+COV_TP,text,Percentage of COVID-19 Positive Tests ,"COVID-19 test positivity percentage.
+
+The percent of COVID-19 positive tests divided by the total number of tests each MMWR week.
+Numerator: Number of laboratory COVID-19 positive test results for each MMWR week.
+Denominator:  Total number of COVID-19 tests each MMWR week.
+
+Values: Positive Numeric"
+COV_TP_LEVEL,text,COVID-19 Test Positivity Level,"Level of COVID-19 test-positivity based on 5 prior seasons of test-positivity data. With <2%  for ""Very Low"", 2-7%  for ""Low"", 7-11%  for ""Moderate"", 11-16%  for ""High"", and >16% for ""Very Low"" for all ages. See Data Notes on Respiratory Virus Dashboard for age levels.
+
+Values: Text (Level name)"
+FLU_POSITIVES,text,Positive Influenza Tests,"Number of influenza laboratory positive test results for each MMWR week.
+
+Values: Positive Numeric"
+FLU_TOTAL_TESTS,text,Total Number of Influenza Tests,"Total number of influenza tests each MMWR week.
+
+Values: Positive Numeric"
+FLU_TP,text,Percentage of Influenza Positive Tests ,"Influenza test positivity percentage.
+
+The percent of influenza positive tests divided by the total number of tests each MMWR week.
+Numerator: Number of laboratory influenza positive test results for each MMWR week.
+Denominator:  Total number of influenza tests each MMWR week.
+
+Values: Positive Numeric"
+FLU_TP_LEVEL,text,Influenza Test Positivity Level,"Level of influenza test-positivity based on 5 prior seasons of test-positivity data. With <2%  for ""Very Low"", 2-5%  for ""Low"", 5-9%  for ""Moderate"", 9-13%  for ""High"", and >13% for ""Very Low"" for all ages. See Data Notes on Respiratory Virus Dashboard for age levels.
+
+Values: Text (Level name)"
+RSV_POSITIVES,text,Positive RSV Tests,"Number of RSV laboratory positive test results for each MMWR week.
+
+Values: Positive Numeric"
+RSV_TOTAL_TESTS,text,Total Number of RSV Tests,"Total number of RSV tests each MMWR week.
+
+Values: Positive Numeric"
+RSV_TP,text,Percentage of RSV Positive Tests,"RSV test positivity percentage.
+
+The percent of RSV positive tests divided by the total number of tests each MMWR week.
+Numerator: Number of laboratory RSV positive test results for each MMWR week.
+Denominator:  Total number of RSV tests each MMWR week.
+
+Values: Positive Numeric"
+RSV_TP_LEVEL,text,RSV Test Positivity Level,"Level of RSV test-positivity based on 5 prior seasons of test-positivity data. With <1%  for ""Very Low"", 1-4%  for ""Low"", 4-6%  for ""Moderate"", 6-9%  for ""High"", and >9% for ""Very Low"" for all ages. See Data Notes on Respiratory Virus Dashboard for age levels.
+
+Values: Text (Level name)"
+FLU_A_TESTS,text,Total Positive Flu A Tests,"Total number of influenza A tests each MMWR week.
+
+Values: Positive Numeric"
+FLU_B_TESTS,text,Total Positive Flu B Tests,"Total number of influenza B tests each MMWR week.
+
+Values: Text (Level name)"
+COV_ED_VISITS,text,Percentage of COVID-19 Emergency Department Visits,"The percentage of COVID-19 emergency department (ED) visits. Only available for the age group ""All Ages"" and the region ""California"".      
+
+Numerator: The number of ED visits with symptoms attributed to COVID-19 for that week
+Denominator:  The total number of ED visits for that week
+
+Values: Positive Numeric"
+FLU_ED_VISITS,text,Percentage of Influenza Emergency Department Visits,"The percentage of influenza ED visits. Only available for the age group ""All Ages"" and the region ""California"".  
+
+Numerator: The number of ED visits with symptoms attributed to influenza for that week
+Denominator:  The total number of ED visits for that week
+
+Values: Positive Numeric"
+RSV_ED_VISITS,text,Percentage of RSV Emergency Department Visits,"The percentage of RSV ED visits. Only available for the age group ""All Ages"" and the region ""California"".  
+
+Numerator: The number of ED visits with symptoms attributed to RSV for that week
+Denominator:  The total number of ED visits for that week
+
+Values: Positive Numeric"
+POP,text,Population,"Population determined by State of California Department of Finance P-3 Complete State and County Projections Dataset. Reported weekly admission rates for the entire season use the population estimates for the year the season started.
+
+Values: Positive Numeric"
+COV_ADM,text,COVID-19 Hospital Admissions,"Number of new COVID-19-associated hospital admissions in the National Healthcare Safety Network (NHSN). As COVID-19 hospitalization data reporting was required by age and in total prior to May 2024, we show hospitalization data for COVID-19 for all three seasons and have imputed modeled data from May-October 2024.
+
+Values: Positive Numeric"
+FLU_ADM,text,Influenza Hospital Admissions,"Number of new influenza-associated hospital admissions in NHSN. The requirement to report COVID-19, influenza, and RSV-associated hospitalizations was effective November 1, 2024, therefore we only show hospitalization data by age and in total for influenza and RSV data after November 1, 2024.
+
+Values: Positive Numeric"
+RSV_ADM,text,RSV Hospital Admissions,"Number of new RSV-associated hospital admissions in NHSN
+
+Values: Positive Numeric"
+COV_ADM_RATE,text,Weekly Rate of COVID-19 Hospital Admissions,"The weekly rate of COVID-19-associated hospital admissions in California reported to the CDC's NHSN data.  The requirement to report COVID-19, influenza, and RSV-associated hospitalizations was effective November 1, 2024, therefore we only show hospitalization data by age and in total for influenza and RSV data after November 1, 2024.
+Numerator: Number of new COVID-19-associated hospital admissions in NHSN
+Denominator:  Population determined by State of California Department of Finance P-3 Complete State and County Projections Dataset. Reported weekly admission rates for the entire season use the population estimates for the year the season started.
+
+Values: Positive Numeric"
+FLU_ADM_RATE,text,Weekly Rate of Influenza Hospital Admissions,"The weekly rate of influenza-associated hospital admissions in California reported to the CDC's NHSN data. The requirement to report COVID-19, influenza, and RSV-associated hospitalizations was effective November 1, 2024, therefore we only show hospitalization data by age and in total for influenza and RSV data after November 1, 2024.  
+Numerator: Number of new influenza-associated hospital admissions in NHSN
+Denominator:  Population determined by State of California Department of Finance P-3 Complete State and County Projections Dataset. Reported weekly admission rates for the entire season use the population estimates for the year the season started.
+
+Values: Positive Numeric"
+RSV_ADM_RATE,text,Weekly Rate of RSV Hospital Admissions,"The weekly rate of RSV-associated hospital admissions in California reported to the CDC's NHSN data. The requirement to report COVID-19, influenza, and RSV-associated hospitalizations was effective November 1, 2024, therefore we only show hospitalization data by age and in total for influenza and RSV data after November 1, 2024.  
+Numerator: Number of new RSV-associated hospital admissions in NHSN
+Denominator:  Population determined by State of California Department of Finance P-3 Complete State and County Projections Dataset. Reported weekly admission rates for the entire season use the population estimates for the year the season started.
+
+Values: Positive Numeric"
+COV_ADM_LEVEL,text,COVID-19 Admission Level,"Level of COVID-19 admissions based on 5 prior seasons of test-positivity data. With <2  for ""Very Low"", 2-11  for ""Low"",  11-20  for ""Moderate"", 20-28  for ""High"", and >28 for ""Very Low"" for all ages. See Data Notes on Respiratory Virus Dashboard for age levels.
+
+Values: Text (Level name)"
+FLU_ADM_LEVEL,text,Influenza Admission Level,"Level of influenza admissions based on 5 prior seasons of test-positivity data. With <1  for ""Very Low"", 1-4  for ""Low"", 4-7  for ""Moderate"", 7-9  for ""High"", and >9 for ""Very Low"" for all ages. See Data Notes on Respiratory Virus Dashboard for age levels.
+
+Values: Text (Level name)"
+RSV_ADM_LEVEL,text,RSV Admission Level,"Level of RSV admissions based on 5 prior seasons of test-positivity data. With <0.6  for ""Very Low"", 0.6-1.1  for ""Low"", 1.1-1.6  for ""Moderate"",  1.6-2.1  for ""High"", and >2.1 for ""Very Low"" for all ages. See Data Notes on Respiratory Virus Dashboard for age levels.
+
+Values: Text (Level name)"
+TOTAL_DEATHS,text,Total Deaths,"Number of all-cause deaths each MMWR week
+
+Values: Positive Numeric"
+COV_DEATHS,text,COVID-19 Deaths,"Number of COVID-19 associated deaths each MMWR week
+
+Values: Positive Numeric"
+FLU_DEATHS,text,Influenza Deaths,"Number of influenza-associated deaths each MMWR week
+
+Values: Positive Numeric"
+RSV_DEATHS,text,RSV Deaths,"Number of RSV-associated deaths each MMWR week
+
+Values: Positive Numeric"
+COV_DEATHS_PER,text,Percentage of Deaths Attributable to COVID-19,"The percentage of all-cause deaths with COVID-19 noted in any cause of death field on the death certificate in California residents for the reporting period. 
+Numerator: Number of COVID-19-associated deaths each MMWR week
+Denominator:  Number of all-cause deaths each MMWR week
+
+Values: Positive Numeric"
+FLU_DEATHS_PER,text,Percentage of Deaths Attributable to Influenza,"The percentage of all-cause deaths with COVID-19 noted in any cause of death field on the death certificate in California residents for the reporting period. 
+Numerator: Number of COVID-19-associated deaths each MMWR week
+Denominator:  Number of all-cause deaths each MMWR week
+
+Values: Positive Numeric"
+RSV_DEATHS_PER,text,Percentage of Deaths Attributable to RSV,"The percentage of all-cause deaths with RSV noted in any cause of death field on the death certificate in California residents for the reporting period. 
+Numerator: Number of RSV-associated deaths each MMWR week
+Denominator:  Number of all-cause deaths each MMWR week
+
+Values: Positive Numeric"
+SEASON_COV_PED_DEATHS,text,Season Total COVID-19 Pediatric Levels,"Number of COVID-19 associated pediatric deaths with lab-confirmation each MMWR week. Only displayed as season total for age group ""0-17 yrs"" and region ""California"".
+
+Values: Positive Numeric"
+SEASON_FLU_PED_DEATHS,text,Season Total Influenza Pediatric Levels,"Number of influenza-associated pediatric deaths with lab-confirmation each MMWR week. Only displayed as season total for age group ""0-17 yrs"" and region ""California"".
+
+Values: Positive Numeric"
+SEASON_RSV_PED_DEATHS,text,Season Total RSV Pediatric Levels,"Number of RSV-associated pediatric deaths with lab-confirmation each MMWR week. Only displayed as season total for age group ""0-17 yrs"" and region ""California"".
+
+Values: Positive Numeric"
